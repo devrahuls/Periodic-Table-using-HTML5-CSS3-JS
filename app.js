@@ -26,6 +26,8 @@ let redditBtn = document.querySelector(".reddit-btn");
 function init() {
     let postUrl = encodeURI(document.location.href);
     let postTitle = encodeURI("Hey Friend! Please check out this Periodic Table");
+    let postVia = encodeURI("desperate_bacha");
+    let postHashtags = encodeURI("#periodic_table_using_HTML_and_CSS")
 
     facebookBtn.setAttribute(
         "href",
@@ -34,7 +36,7 @@ function init() {
 
     twitterBtn.setAttribute(
         "href",
-        `https://twitter.com/share?url=${postUrl}&text=${postTitle}&via=[via]&hashtags=[hashtags]`
+        `https://twitter.com/share?url=${postUrl}&text=${postTitle}&via=${postVia}&hashtags=${postHashtags}`
     );
 
     linkedinBtn.setAttribute(
